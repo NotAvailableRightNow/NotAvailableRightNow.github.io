@@ -38,12 +38,13 @@
             box-shadow: 0 0 30px rgba(0,0,0,0.7);
         }
 
-        /* Sidebar bên phải */
+        /* Sidebar bên trái (đã sửa) */
         .sidebar {
             flex: 1;
             padding: 40px 30px;
             background-color: var(--current-line);
-            border-left: 3px solid var(--purple);
+            /* Đổi border sang phải vì sidebar giờ nằm bên trái */
+            border-right: 3px solid var(--purple); 
             display: flex;
             flex-direction: column;
             align-items: center; /* Căn giữa avatar */
@@ -67,10 +68,10 @@
         }
 
         .sidebar-content {
-            width: 100%; /* Đảm bảo text căn lề trái trong sidebar */
+            width: 100%;
         }
 
-        /* Nội dung chính bên trái */
+        /* Nội dung chính bên phải (đã sửa vị trí) */
         .main-content {
             flex: 2;
             padding: 50px;
@@ -105,43 +106,6 @@
 <body>
 
     <div class="container">
-        <div class="main-content">
-            <h1>Duong Dang Quang</h1> [cite: 1]
-            <p style="color: var(--comment); font-size: 1.2rem;">Student at University of Information and Technology</p> [cite: 3]
-
-            <section>
-                <h2>Thành tích Quốc gia</h2>
-                <div>
-                    <h3>Third Prize - Vietnam Olympiad in Informatics (VOI)</h3> [cite: 7]
-                    <span class="date">2025</span> [cite: 7]
-                </div>
-                <div style="margin-top: 20px;">
-                    <h3>Third Prize - Vietnam Olympiad in Informatics (VOI)</h3> [cite: 8]
-                    <span class="date">2024</span> [cite: 8]
-                </div>
-            </section>
-
-            <section>
-                <h2>Học vấn</h2>
-                <div>
-                    <h3>University of Information and Technology</h3> [cite: 9]
-                    <span class="highlight">Undergraduate (CS)</span> | <span class="date">2025 - 2028</span> [cite: 9, 12]
-                    <p>Ho Chi Minh City, Viet Nam</p> [cite: 11]
-                </div>
-                <div style="margin-top: 20px;">
-                    <h3>Ly Tu Trong High School for the Gifted</h3> [cite: 6]
-                    <span class="date">2022 - 2025</span> [cite: 10]
-                    <p>Can Tho City</p> [cite: 10]
-                </div>
-            </section>
-
-            <section>
-                <h2>Kỹ năng mềm & Ngôn ngữ</h2> [cite: 13]
-                <p><span class="highlight">Soft Skills:</span> Problem Solving, Teamwork</p> [cite: 16]
-                <p><span class="highlight">Languages:</span> Vietnamese (Native), English</p> [cite: 17]
-            </section>
-        </div>
-
         <div class="sidebar">
             <div class="avatar-container">
                 <img src="https://github.com/NotAvailableRightNow.png" alt="Github Avatar">
@@ -170,20 +134,57 @@
                     <a href="https://github.com/NotAvailableRightNow">NotAvailableRightNow</a> 
                 </div>
 
-                <h2>Lập trình</h2> [cite: 13]
+                <h2>Lập trình</h2>
                 <div>
-                    <span class="skill-tag">C++</span> [cite: 14]
-                    <span class="skill-tag">Python</span> [cite: 14]
-                    <span class="skill-tag">Java</span> [cite: 14]
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
                 </div>
 
-                <h2 style="margin-top: 25px;">Frameworks</h2> [cite: 13]
+                <h2 style="margin-top: 25px;">Frameworks</h2>
                 <div>
-                    <span class="skill-tag">PyTorch</span> [cite: 15]
-                    <span class="skill-tag">Hugging Face</span> [cite: 15]
-                    <span class="skill-tag">Linux</span> [cite: 15]
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">Hugging Face</span>
+                    <span class="skill-tag">Linux</span>
                 </div>
             </div>
+        </div>
+
+        <div class="main-content">
+            <h1>Duong Dang Quang</h1>
+            <p style="color: var(--comment); font-size: 1.2rem;">Student at University of Information and Technology</p>
+
+            <section>
+                <h2>Thành tích Quốc gia</h2>
+                <div>
+                    <h3>Third Prize - Vietnam Olympiad in Informatics (VOI)</h3>
+                    <span class="date">2025</span>
+                </div>
+                <div style="margin-top: 20px;">
+                    <h3>Third Prize - Vietnam Olympiad in Informatics (VOI)</h3>
+                    <span class="date">2024</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Học vấn</h2>
+                <div>
+                    <h3>University of Information and Technology</h3>
+                    <span class="highlight">Undergraduate (CS)</span> | <span class="date">2025 - 2028</span>
+                    <p>Ho Chi Minh City, Viet Nam</p>
+                </div>
+                <div style="margin-top: 20px;">
+                    <h3>Ly Tu Trong High School for the Gifted</h3>
+                    <span class="date">2022 - 2025</span>
+                    <p>Can Tho City</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Kỹ năng mềm & Ngôn ngữ</h2>
+                <p><span class="highlight">Soft Skills:</span> Problem Solving, Teamwork</p>
+                <p><span class="highlight">Languages:</span> Vietnamese (Native), English</p>
+            </section>
         </div>
     </div>
 
