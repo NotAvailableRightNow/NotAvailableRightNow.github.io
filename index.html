@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duong Dang Quang | Portfolio</title>
+    <style>
+        /* Dracula Theme Colors */
+        :root {
+            --bg: #282a36;
+            --current-line: #44475a;
+            --fg: #f8f8f2;
+            --comment: #6272a4;
+            --cyan: #8be9fd;
+            --green: #50fa7b;
+            --orange: #ffb86c;
+            --pink: #ff79c6;
+            --purple: #bd93f9;
+            --red: #ff5555;
+            --yellow: #f1fa8c;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--fg);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0,0,0,0.7);
+        }
+
+        /* Sidebar bên phải */
+        .sidebar {
+            flex: 1;
+            padding: 40px 30px;
+            background-color: var(--current-line);
+            border-left: 3px solid var(--purple);
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Căn giữa avatar */
+        }
+
+        /* Avatar Styling */
+        .avatar-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--purple);
+            overflow: hidden;
+            margin-bottom: 30px;
+            background-color: var(--bg);
+        }
+
+        .avatar-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sidebar-content {
+            width: 100%; /* Đảm bảo text căn lề trái trong sidebar */
+        }
+
+        /* Nội dung chính bên trái */
+        .main-content {
+            flex: 2;
+            padding: 50px;
+            background-color: var(--bg);
+        }
+
+        h1 { color: var(--purple); margin-top: 0; font-size: 2.8rem; }
+        h2 { color: var(--pink); border-bottom: 1px solid var(--comment); padding-bottom: 5px; margin-top: 35px; }
+        h3 { color: var(--cyan); margin-bottom: 5px; }
+        
+        .highlight { color: var(--green); font-weight: bold; }
+        .date { color: var(--orange); font-style: italic; font-size: 0.9rem; }
+        
+        .contact-item { margin-bottom: 20px; }
+        .contact-item strong { display: block; color: var(--cyan); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; }
+        
+        a { color: var(--yellow); text-decoration: none; transition: 0.3s; }
+        a:hover { color: var(--pink); }
+
+        .skill-tag {
+            display: inline-block;
+            background: var(--purple);
+            color: var(--bg);
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin: 3px;
+            font-size: 0.85rem;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main-content">
+            <h1>Duong Dang Quang</h1> [cite: 1]
+            <p style="color: var(--comment); font-size: 1.2rem;">Student at University of Information and Technology</p> [cite: 3]
+
+            <section>
+                <h2>Thành tích Quốc gia</h2>
+                <div>
+                    <h3>Third Prize - Vietnam Olympiad in Informatics (VOI)</h3> [cite: 7]
+                    <span class="date">2025</span> [cite: 7]
+                </div>
+                <div style="margin-top: 20px;">
+                    <h3>Third Prize - Vietnam Olympiad in Informatics (VOI)</h3> [cite: 8]
+                    <span class="date">2024</span> [cite: 8]
+                </div>
+            </section>
+
+            <section>
+                <h2>Học vấn</h2>
+                <div>
+                    <h3>University of Information and Technology</h3> [cite: 9]
+                    <span class="highlight">Undergraduate (CS)</span> | <span class="date">2025 - 2028</span> [cite: 9, 12]
+                    <p>Ho Chi Minh City, Viet Nam</p> [cite: 11]
+                </div>
+                <div style="margin-top: 20px;">
+                    <h3>Ly Tu Trong High School for the Gifted</h3> [cite: 6]
+                    <span class="date">2022 - 2025</span> [cite: 10]
+                    <p>Can Tho City</p> [cite: 10]
+                </div>
+            </section>
+
+            <section>
+                <h2>Kỹ năng mềm & Ngôn ngữ</h2> [cite: 13]
+                <p><span class="highlight">Soft Skills:</span> Problem Solving, Teamwork</p> [cite: 16]
+                <p><span class="highlight">Languages:</span> Vietnamese (Native), English</p> [cite: 17]
+            </section>
+        </div>
+
+        <div class="sidebar">
+            <div class="avatar-container">
+                <img src="https://github.com/NotAvailableRightNow.png" alt="Github Avatar">
+            </div>
+
+            <div class="sidebar-content">
+                <h2>Thông tin</h2>
+                
+                <div class="contact-item">
+                    <strong>Vị trí</strong>
+                    Ho Chi Minh City 
+                </div>
+
+                <div class="contact-item">
+                    <strong>Điện thoại</strong>
+                    +84 963 617 540 
+                </div>
+
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <a href="mailto:25521516@gm.uit.edu.vn">25521516@gm.uit.edu.vn</a> 
+                </div>
+
+                <div class="contact-item">
+                    <strong>Github</strong>
+                    <a href="https://github.com/NotAvailableRightNow">NotAvailableRightNow</a> 
+                </div>
+
+                <h2>Lập trình</h2> [cite: 13]
+                <div>
+                    <span class="skill-tag">C++</span> [cite: 14]
+                    <span class="skill-tag">Python</span> [cite: 14]
+                    <span class="skill-tag">Java</span> [cite: 14]
+                </div>
+
+                <h2 style="margin-top: 25px;">Frameworks</h2> [cite: 13]
+                <div>
+                    <span class="skill-tag">PyTorch</span> [cite: 15]
+                    <span class="skill-tag">Hugging Face</span> [cite: 15]
+                    <span class="skill-tag">Linux</span> [cite: 15]
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
